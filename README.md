@@ -62,7 +62,7 @@ This will verify:
 - Global Average Pooling before the final fully connected layer
 - Final FC layer: 20 → 10
 
-## Model Training Logs (Github Action - https://github.com/milindchawre/assignment6-cnn/actions/runs/12412505708/job/34652442221)
+## Model Training Logs (Github Action - https://github.com/milindchawre/assignment6-cnn/actions/runs/12412830403/job/34653438450)
 Training logs will be generated after running the updated model. You can monitor the training process through the console output.
 ```
 Total Model Parameters: 16,042
@@ -88,9 +88,10 @@ Epoch 12: Test set: Average loss: 0.0267, Accuracy: 99.05%
 Epoch 13: Test set: Average loss: 0.0238, Accuracy: 99.15%
 Epoch 14: Test set: Average loss: 0.0304, Accuracy: 98.94%
 Epoch 15: Test set: Average loss: 0.0165, Accuracy: 99.46%
-Reached target accuracy of 99.4% at epoch 15
-Training Complete!
 
+Reached target accuracy of 99.4% at epoch 15
+
+Training Complete!
 ==================================================
 Dataset Split Summary:
 Training Set: 50,000 samples
@@ -105,12 +106,13 @@ Training stopped at epoch: 15/19
 ==================================================
 ```
 
-## Model Test Logs (Github Action - https://github.com/milindchawre/assignment6-cnn/actions/runs/12412505708/job/34652442221)
+## Model Test Logs (Github Action - https://github.com/milindchawre/assignment6-cnn/actions/runs/12412830403/job/34653438450)
 ```
 ============================= test session starts ==============================
 platform linux -- Python 3.8.18, pytest-8.3.4, pluggy-1.5.0
 rootdir: /home/runner/work/assignment6-cnn/assignment6-cnn
 collected 2 items
+
 src/test_model.py 
 Model Parameter Count Test:
 Total parameters in model: 16,042
@@ -122,7 +124,8 @@ Linear layer present: True
 Global Average Pooling layer present: True
 All required components are present in the model.
 .
-============================== 2 passed in 1.97s ===============================
+
+============================== 2 passed in 2.14s ===============================
 ```
 
 ## Contributing
