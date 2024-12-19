@@ -62,33 +62,35 @@ This will verify:
 - Global Average Pooling before the final fully connected layer
 - Final FC layer: 20 → 10
 
-## Model Training Logs
+## Model Training Logs (Github Action - https://github.com/milindchawre/assignment6-cnn/actions/runs/12412505708/job/34652442221)
 Training logs will be generated after running the updated model. You can monitor the training process through the console output.
 ```
 Total Model Parameters: 16,042
 
 Dataset Split:
+
 Training samples: 50,000
 Validation/Test samples: 10,000
 Split ratio: 50000/10000
-Epoch 1: Test set: Average loss: 0.0840, Accuracy: 97.30%
-Epoch 2: Test set: Average loss: 0.0812, Accuracy: 97.44%
-Epoch 3: Test set: Average loss: 0.0415, Accuracy: 98.74%
-Epoch 4: Test set: Average loss: 0.0363, Accuracy: 98.82%
-Epoch 5: Test set: Average loss: 0.0342, Accuracy: 98.88%
-Epoch 6: Test set: Average loss: 0.0330, Accuracy: 98.96%
-Epoch 7: Test set: Average loss: 0.0261, Accuracy: 99.19%
-Epoch 8: Test set: Average loss: 0.0280, Accuracy: 99.17%
-Epoch 9: Test set: Average loss: 0.0269, Accuracy: 99.13%
-Epoch 10: Test set: Average loss: 0.0235, Accuracy: 99.24%
-Epoch 11: Test set: Average loss: 0.0230, Accuracy: 99.22%
-Epoch 12: Test set: Average loss: 0.0212, Accuracy: 99.28%
-Epoch 13: Test set: Average loss: 0.0261, Accuracy: 99.17%
-Epoch 14: Test set: Average loss: 0.0202, Accuracy: 99.46%
 
-Reached target accuracy of 99.4% at epoch 14
-
+Epoch 1: Test set: Average loss: 0.0787, Accuracy: 97.47%
+Epoch 2: Test set: Average loss: 0.0527, Accuracy: 98.22%
+Epoch 3: Test set: Average loss: 0.0475, Accuracy: 98.45%
+Epoch 4: Test set: Average loss: 0.0398, Accuracy: 98.61%
+Epoch 5: Test set: Average loss: 0.0314, Accuracy: 99.04%
+Epoch 6: Test set: Average loss: 0.0271, Accuracy: 99.05%
+Epoch 7: Test set: Average loss: 0.0273, Accuracy: 98.99%
+Epoch 8: Test set: Average loss: 0.0229, Accuracy: 99.14%
+Epoch 9: Test set: Average loss: 0.0288, Accuracy: 99.06%
+Epoch 10: Test set: Average loss: 0.0240, Accuracy: 99.15%
+Epoch 11: Test set: Average loss: 0.0239, Accuracy: 99.19%
+Epoch 12: Test set: Average loss: 0.0267, Accuracy: 99.05%
+Epoch 13: Test set: Average loss: 0.0238, Accuracy: 99.15%
+Epoch 14: Test set: Average loss: 0.0304, Accuracy: 98.94%
+Epoch 15: Test set: Average loss: 0.0165, Accuracy: 99.46%
+Reached target accuracy of 99.4% at epoch 15
 Training Complete!
+
 ==================================================
 Dataset Split Summary:
 Training Set: 50,000 samples
@@ -97,15 +99,30 @@ Split Ratio: 50000/10000
 --------------------------------------------------
 Total Model Parameters: 16,042
 Best Validation/Test Accuracy: 99.46%
-Final Training Loss: 0.0343
-Final Validation/Test Loss: 0.0202
-Training stopped at epoch: 14/19
+Final Training Loss: 0.0286
+Final Validation/Test Loss: 0.0165
+Training stopped at epoch: 15/19
 ==================================================
 ```
 
-## Model Test Logs
+## Model Test Logs (Github Action - https://github.com/milindchawre/assignment6-cnn/actions/runs/12412505708/job/34652442221)
 ```
-
+============================= test session starts ==============================
+platform linux -- Python 3.8.18, pytest-8.3.4, pluggy-1.5.0
+rootdir: /home/runner/work/assignment6-cnn/assignment6-cnn
+collected 2 items
+src/test_model.py 
+Model Parameter Count Test:
+Total parameters in model: 16,042
+.Required Components Test:
+BatchNorm layer present: True
+Dropout layer present: True
+Conv2d layer present: True
+Linear layer present: True
+Global Average Pooling layer present: True
+All required components are present in the model.
+.
+============================== 2 passed in 1.97s ===============================
 ```
 
 ## Contributing
